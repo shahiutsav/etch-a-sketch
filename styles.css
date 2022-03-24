@@ -20,10 +20,10 @@
 }
 
 .box:hover {
-    background-color: aqua;
+    background-color: #5f27cd;
 
     /* Hover on */
-    transition: background-color 1s ease;
+    transition: background-color 0.01s ease;
 }
 
 button {
