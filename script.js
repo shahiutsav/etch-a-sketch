@@ -20,6 +20,9 @@ function removeGrid() {
     while (container.firstChild) {
         container.removeChild(container.lastChild)
     }
+    let userInput = prompt("Enter the size of the grid: ")
+    gridSizeArray = userInput.split("x")
+    makeRows(gridSizeArray[0], gridSizeArray[1])
 }
 
 makeRows(16, 16)
