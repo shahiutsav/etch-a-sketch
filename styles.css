@@ -13,9 +13,13 @@
 .box {
     padding: 1em;
     border: 1px solid #ddd;
+    /* Hover off */
+    transition: background-color 5s ease;
 }
 
 .box:hover {
     background-color: aqua;
-    transition: all 1s ease;
+
+    /* Hover on */
+    transition: background-color 1s ease;
 }
