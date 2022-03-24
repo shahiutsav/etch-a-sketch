@@ -20,9 +20,16 @@ function removeGrid() {
     while (container.firstChild) {
         container.removeChild(container.lastChild)
     }
+    userInput()
+    while (gridSizeArray[0] >= 100 || gridSizeArray[1] >= 100) {
+        userInput()
+    }
+    makeRows(gridSizeArray[0], gridSizeArray[1])
+}
+
+function userInput() {
     let userInput = prompt("Enter the size of the grid: ")
     gridSizeArray = userInput.split("x")
-    makeRows(gridSizeArray[0], gridSizeArray[1])
 }
 
 makeRows(16, 16)
