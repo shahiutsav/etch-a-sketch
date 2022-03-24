@@ -3,15 +3,17 @@
     --grid-rows: 1;
 }
 .container {
-    width: fit-content;
-    height: fit-content;
+    margin: auto;
+    width: 600px;
+    height: 600px;
     display: grid;
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     grid-template-rows: repeat(var(--grid-rows), 1fr);
 }
 
 .box {
-    padding: 1em;
+    width: 100%;
+    height: 100%;
     border: 1px solid #ddd;
     /* Hover off */
     transition: background-color 5s ease;
