@@ -16,4 +16,10 @@ function makeRows(
     }
 }
 
+function removeGrid() {
+    while (container.firstChild) {
+        container.removeChild(container.lastChild)
+    }
+}
+
 makeRows(16, 16)
