@@ -16,7 +16,7 @@
     height: 100%;
     border: 1px solid #ddd;
     /* Hover off */
-    transition: background-color 5s ease;
+    /* transition: background-color 5s ease; */
 }
 
 button {

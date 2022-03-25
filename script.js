@@ -32,6 +32,12 @@ function makeRows(
         let cell = document.createElement("div") // Create element div
         cell.addEventListener("mouseover", function handleMouseOver() {
             cell.style.backgroundColor = random_rgba()
+            cell.style.transition = "background-color 0.01s ease"
+        })
+
+        cell.addEventListener("mouseout", function handleMouseOut() {
+            cell.style.backgroundColor = "white"
+            cell.style.transition = "background-color 5s ease"
         })
         container.appendChild(cell).className = "box" // Add created div to the containeer with class box
     }
