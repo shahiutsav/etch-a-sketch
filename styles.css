@@ -19,13 +19,6 @@
     transition: background-color 5s ease;
 }
 
-.box:hover {
-    background-color: #5f27cd;
-
-    /* Hover on */
-    transition: background-color 0.01s ease;
-}
-
 button {
     border: 1px solid transparent;
     background-color: #5f27cd;

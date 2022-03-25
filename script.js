@@ -1,5 +1,23 @@
 const container = document.querySelector(".container") // get div with class container
 
+function random_rgba() {
+    let o = Math.round,
+        r = Math.random,
+        s = 255
+
+    return (
+        "rgba(" +
+        o(r() * s) +
+        "," +
+        o(r() * s) +
+        "," +
+        o(r() * s) +
+        "," +
+        r().toFixed(1) +
+        ")"
+    )
+}
+
 function makeRows(
     rows, // number of rows to be made
     cols // number of columns to be made
@@ -12,6 +30,9 @@ function makeRows(
         c++
     ) {
         let cell = document.createElement("div") // Create element div
+        cell.addEventListener("mouseover", function handleMouseOver() {
+            cell.style.backgroundColor = random_rgba()
+        })
         container.appendChild(cell).className = "box" // Add created div to the containeer with class box
     }
 }
