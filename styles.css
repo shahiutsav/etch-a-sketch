@@ -2,7 +2,11 @@
     --grid-cols: 1;
     --grid-rows: 1;
 }
+body {
+    background-color: #eccc68;
+}
 .container {
+    box-shadow: 5px 10px 25px #888888;
     margin: auto;
     width: 600px;
     height: 600px;
@@ -15,24 +19,25 @@
     width: 100%;
     height: 100%;
     border: 1px solid #ddd;
+    background-color: #ced6e0;
     /* Hover off */
     /* transition: background-color 5s ease; */
 }
 
 button {
     border: 1px solid transparent;
-    background-color: #5f27cd;
+    background-color: #ff4757;
     color: #ffffff;
     font-size: 14px;
     padding: 10px 25px;
     border-radius: 10px;
-    transition: all 0.2s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 button:hover {
     cursor: pointer;
-    border: 1px solid #5f27cd;
-    background-color: white;
-    color: #5f27cd;
+    border: 1px solid #ff4757;
+    background-color: #5352ed;
+    color: #ffffff;
     transition: all 0.2s ease-out;
 }
